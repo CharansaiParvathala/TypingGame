@@ -5,6 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault(); 
         const typedText = document.getElementById('message').value; 
         localStorage.setItem('typedText', typedText); 
-        window.location.href = 'file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit%20user%20files/TypingGame.html';
+        window.location.href = 'https://charansaiparvathala.github.io/TypingGame/TypingGame.html';
     });
 });
