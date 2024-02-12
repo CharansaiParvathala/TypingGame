@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
         wpmTag.innerText = 0;
         mistakeTag.innerText = 0;
         cpmTag.innerText = 0;
-        window.location.href = 'https://charansaiparvathala.github.io/TypingGame/';
+        window.location.href = 'https://typogame.netlify.app/';
     }
 
     loadParagraph();
