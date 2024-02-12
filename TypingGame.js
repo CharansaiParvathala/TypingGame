@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
         wpmTag.innerText = 0;
         mistakeTag.innerText = 0;
         cpmTag.innerText = 0;
-        window.location.href = 'file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit%20user%20files/imdex.html';
+        window.location.href = 'https://charansaiparvathala.github.io/TypingGame/';
     }
 
     loadParagraph();
