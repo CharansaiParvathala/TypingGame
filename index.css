@@ -65,13 +65,13 @@ marquee{
     font-size: 20px;
     background-color: #0000008d;
 }
+h4 {
+color: white;
+}
 h2 {
     text-align: center;
     color: #eaffea;
     margin-bottom: 40px;
-}
-h4{
-  color: white;
 }
 p{
 color: white;
