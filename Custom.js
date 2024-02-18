@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('message').setAttribute('required', '');
 
         localStorage.setItem('typedText', typedText); 
-        window.location.href = 'file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit%20user%20files/TypingGame.html';
+        window.location.href = 'https://charansaiparvathala.github.io/TypingGame/TypingGame.html';
     });
 });
 
@@ -41,6 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('message').setAttribute('required', '');
 
         localStorage.setItem('typedText', typedText); 
-        window.location.href = 'file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit%20user%20files/Entry.html';
+        window.location.href = 'https://charansaiparvathala.github.io/TypingGame/Invisible.html';
     });
 });
