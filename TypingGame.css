@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 body {
     display: flex;
     padding: 0 10px;
@@ -9,9 +13,8 @@ body {
     min-height: 100vh;
     background: linear-gradient( #007acc, #6DD5FA, #FFFFFF);
 }
-
 #paragraph{
-    color: #b5b5b5;
+    color: #646669;
 }
 .result-details{
     color: white;
@@ -27,12 +30,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 10px 15px rgba(0,0,0,0.05);
 }
-/*5565*/
-.wrapper.input-field{
-    opacity: 0;
-    position: absolute;
-}
-.wrapper .input-field{
+.wrapper .input-field {
     opacity: 0;
     z-index: -999;
     position: absolute;
@@ -49,35 +47,22 @@ body {
 .typing-text::-webkit-scrollbar {
     width: 0;
 }
-/*.typing-text p {
-    font-size: 21px;
-    text-align: justify;
-    letter-spacing: 1px;
-    /*word-break: break-all;
-}*/
-
 .typing-text p {
     font-size: 21px;
     text-align: justify;
     letter-spacing: 1px;
-    color: #b0b0b0c7; 
+    word-break: break-all;
 }
-
-
 .typing-text p span {
     position: relative;
 }
 .typing-text p span.correct {
-    color: #00ff03d6;
+    color: #00ff42ee;
 }
 .typing-text p span.incorrect {
     color: #ca4754;
     border-radius: 4px;
 }
-//Boink colour
- .typing-text p span.active {
-    color: #17A2B8;
-} 
 .typing-text p span.active::before {
     position: absolute;
     content: "";
@@ -87,11 +72,12 @@ body {
     left: 0;
     opacity: 0;
     border-radius: 5px;
+    background: #007acc;
     animation: blink 1s ease-in-out infinite;
 }
 @keyframes blink {
     50% {
-        opacity: 10;
+        opacity: 1;
     }
 }
 .content-box .content {
@@ -106,7 +92,7 @@ body {
 .content button {
     outline: none;
     border: none;
-   /* width: 105px;*/
+    width: 105px;
     color: #007acc;
     padding: 8px 0;
     font-size: 17px;
@@ -197,23 +183,7 @@ li:not(:first-child) span {
     .result-details li {
         margin-bottom: 10px;
     }
-    .content input {
-        
-    }
     .content button {
         margin-top: 10px;
-    }
-}
-
-@media (min-width: 768px) {
-    .content button {
-        width: 700px; 
-        height: 50px;
-    }
-}
-
-@media (max-width: 767px) {
-    .content button {
-        width: 350px;
     }
 }
