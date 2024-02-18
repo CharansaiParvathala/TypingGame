@@ -57,7 +57,7 @@ body {
     position: relative;
 }
 .typing-text p span.correct {
-    color: #d1d0c5;
+   color: #00ff42ee;
 }
 .typing-text p span.incorrect {
     color: #ca4754;
