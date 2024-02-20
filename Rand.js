@@ -72,11 +72,7 @@ function initTyping() {
         wpmTag.innerText = wpm;
         mistakeTag.innerText = mistakes;
         cpmTag.innerText = charIndex - mistakes;
-    } *else {
-        clearInterval(timer);
-        inpField.value = "";
-    }*/
-  else {
+    } else {
         clearInterval(timer);
         // Display result here
         // For example:
@@ -85,7 +81,9 @@ function initTyping() {
         } else {
             alert("You completed the text! Your result is: WPM: " + wpmTag.innerText + ", Mistakes: " + mistakeTag.innerText + ", CPM: " + cpmTag.innerText);
         }
+    }
 }
+
 
 function initTimer() {
     if (timeLeft > 0) {
