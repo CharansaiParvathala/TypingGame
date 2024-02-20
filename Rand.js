@@ -72,10 +72,19 @@ function initTyping() {
         wpmTag.innerText = wpm;
         mistakeTag.innerText = mistakes;
         cpmTag.innerText = charIndex - mistakes;
-    } else {
+    } *else {
         clearInterval(timer);
         inpField.value = "";
-    }
+    }*/
+  else {
+        clearInterval(timer);
+        // Display result here
+        // For example:
+        if (timeLeft <= 0) {
+            alert("Time's up! Your result is: WPM: " + wpmTag.innerText + ", Mistakes: " + mistakeTag.innerText + ", CPM: " + cpmTag.innerText);
+        } else {
+            alert("You completed the text! Your result is: WPM: " + wpmTag.innerText + ", Mistakes: " + mistakeTag.innerText + ", CPM: " + cpmTag.innerText);
+        }
 }
 
 function initTimer() {
