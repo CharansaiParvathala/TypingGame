@@ -105,14 +105,14 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 1
     cursor: pointer;
     border-radius: 15px;
     border: 3px solid #0003ff;
-    background: #0003ff86;/**/
+    background: #00b90392;/**/
     transition: transform 0.2s ease;
 }
 .content button:active {
     transform: scale(0.89);
 }
 .content button:hover {
-    background: #00b90392;/**/
+    background: white;/**/
 }
 .content .result-details {
     display: flex;
