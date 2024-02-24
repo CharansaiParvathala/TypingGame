@@ -22,20 +22,19 @@ body{
     height: 100px;
 }
 
-.button {
+button {
     outline: none;
     border: none;
-    color: #007acc;
-    padding: 20px 1;
-    font-size: 20px;
+    width: 105px;
+    color: ;
+    padding: 8px 0;
+    font-size: 17px;
     font-weight: 600;
     cursor: pointer;
     border-radius: 15px;
-    border: 3px solid #007acc;
-    background: none;
+    border: 3px solid #0003ff;
+    background: #0003ff86;/**/
     transition: transform 0.2s ease;
-    margin-top: 100px;
-    
 }
 @media (max-width: 767px) {
     .content button{
