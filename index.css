@@ -38,7 +38,7 @@ button {
 @media (min-width: 768px) {
     .content button{
         width: 650px;
-        height: 70px;
+        height: 45px;
     }
 }
 .button:active {
