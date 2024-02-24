@@ -50,7 +50,7 @@ button {
     border: 2px solid #1100ff;
     border-radius: 10px;
     background: black;
-    height: 150px;
+    height: 130px;
     width: 350px;
     color: white;
 }
@@ -61,7 +61,7 @@ button {
     border: 2px solid #1100ff;
     border-radius: 10px;
     background: black;
-    height: 200px;
+    height: 170px;
     width: 650px;
     color: white;
 }
@@ -70,7 +70,7 @@ button {
 @media (max-width: 767px) {
     .wrapper {
     width: 370px;
-    height: 130px;
+    height: 200px;
     padding: 35px;
     border-radius: 10px;
     background: #000000;
@@ -80,7 +80,7 @@ button {
 @media (min-width: 768px) {
     .wrapper {
     width: 700px;
-    height: 180px;
+    height: 260px;
     padding: 35px;
     border-radius: 10px;
     background: #000000;
