@@ -13,14 +13,14 @@ body{
     
 }
 
-.wrapper {
+/*.wrapper {
     width: 700px;
     padding: 20px;
     background: #1e1e1e;
     border-radius: 10px;
     box-shadow: 0 10px 15px rgba(0,0,0,0.05);
     height: 100px;
-}
+}*/
 
 button {
     outline: none;
@@ -71,5 +71,5 @@ color: white;
 h2 {
     text-align: center;
     color: #eaffea;
-    margin-bottom: 40px;
+    
 }
