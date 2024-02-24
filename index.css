@@ -24,6 +24,7 @@ button {
     cursor: pointer;
     border-radius: 15px;
     border: 3px solid #0003ff;
+    background: #00b90392;
     transition: transform 0.2s ease;
     margin-top:100px
 }
@@ -45,11 +46,10 @@ button {
 }
 
 .button:hover {
-    background: #FFFFFF;
+    background: white;
 }
 .content {
     margin-top: 1px;
-   /* text-align: center; */
     }
 marquee{
     color: #ff80f1;
