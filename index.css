@@ -13,21 +13,12 @@ body{
     
 }
 
-/*.wrapper {
-    width: 700px;
-    padding: 20px;
-    background: #1e1e1e;
-    border-radius: 10px;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.05);
-    height: 100px;
-}*/
-
 button {
     outline: none;
     border: none;
     width: 105px;
     color: ;
-    padding: 8px 0;
+    padding: 20px 1;
     font-size: 17px;
     font-weight: 600;
     cursor: pointer;
@@ -35,6 +26,7 @@ button {
     border: 3px solid #0003ff;
     background: #0003ff86;/**/
     transition: transform 0.2s ease;
+    margin-top:100px
 }
 @media (max-width: 767px) {
     .content button{
