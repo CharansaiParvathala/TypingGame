@@ -4,7 +4,7 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="Custom.css">
-    <title>My HTML Page</title> 
+    <title>Typing Game</title> 
 </head> 
 <body>
 
@@ -14,11 +14,14 @@
         <textarea class="input-field" id="message" name="message" required></textarea>
         <div class="content-box">
             <div class="content">
-                <button id="submitBtn" class="button1">Start With Visible Text</button>
-                 <button id="Btn2" class="button2">Start With Invisible Text</button>
+                <button id="submitBtn" class="button1" onclick="audio.play();">Start With Visible Text</button>
+                 <button id="Btn2" class="button2" onclick="audio.play();">Start With Invisible Text</button>
             </div>
         </div>
     </div>
         <script src="Custom.js"></script>
+        <script type="text/javascript">
+          audio.src = "https://res.cloudinary.com/dkh9qnxkd/video/upload/v1708856768/mouse-click-153941_dlwpdq.mp3";
+          </script>
 </body>
 </html>
