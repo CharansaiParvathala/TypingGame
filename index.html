@@ -3,28 +3,28 @@
 <head> 
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mode.css">
     <title>TypoGame</title> 
 </head> 
 <body>
     <marquee loop="-1">ATTENTION PLEASE. IT IS A DEVELOPING SITE. PLEASE WAIT FOR THE PERFECT SITE. IN THE FUTURE, TWO OTHER MODES WILL BE ADDED.</marquee>
-    <br><br>
-  
-    <div class="Bu">
-    <div class="wrapper">
-        <h2>Select Any Mode</h2>
-          <img src="https://res.cloudinary.com/dkh9qnxkd/image/upload/v1708249323/Picsart_24-02-18_11-08-02-580_u7nfec.png" height="150" width="180">
-<h4>Internship Project</h4>
-        <div class="content-box">
-            <div class="content">
-                <button id="Btn1" class="button margin-below">Random Text Mode</button>
-                <button id="Btn2" class="button margin-below">Custome Text Mode</button>
-            </div>
-        </div>
+    <div class="box">
+    <div class="bu">
+        <img src="https://res.cloudinary.com/dkh9qnxkd/image/upload/v1708854242/IMG_20240225_151210-removebg-preview_cbcouu.png" width="450" height="400" class="mob"></img>
+    <img src="https://res.cloudinary.com/dkh9qnxkd/image/upload/v1708854232/IMG_20240225_151239-removebg-preview_jq9uus.png" class="lap"></img>
     </div>
-    </div>
-<br><br><br><br><br>
-<p><b>Note :</b> Please don't enter double spaces where a single space is sufficient it may cause error. If you enter double spaces, it will consider all the upcoming characters to be incorrect, even if you enter the correct character.</p>
-      <script src="index.js"></script>
+    
+    <img src="https://res.cloudinary.com/dkh9qnxkd/image/upload/v1708854285/images__6_-removebg-preview_pbgnl4.png" class="click" onclick="audio.play();" id="clicked">
+ </div>
+     <script type="text/javascript">
+         const audio = new Audio();
+         // Correct the audio source URL
+         audio.src = "https://res.cloudinary.com/dkh9qnxkd/video/upload/v1708854299/click-button-140881_f2eduy.mp3";
+         document.getElementById("clicked").addEventListener("click", function() {
+            setTimeout(function(){
+                window.location.href = "https://chat.openai.com/c/7b42dfd8-23c7-45ac-9409-3aa441283160";
+            });
+         });
+     </script>
 </body>
 </html>
