@@ -39,6 +39,12 @@ function loadParagraph() {
 }
 
 function initTyping() {
+
+const audio = new Audio();
+         audio.src = "https://res.cloudinary.com/dkh9qnxkd/video/upload/v1708854299/click-button-140881_f2eduy.mp3";
+         audio.volume = 0.2;
+         audio.play();
+
     let characters = typingText.querySelectorAll("span");
     let typedChar = inpField.value.split("")[charIndex];
     if (charIndex < characters.length - 1 && timeLeft > 0) {
