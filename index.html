@@ -18,19 +18,10 @@
  </div>
      <script type="text/javascript">
          const audio = new Audio();
-audio.src = "https://res.cloudinary.com/dkh9qnxkd/video/upload/v1708856768/mouse-click-153941_dlwpdq.mp3";
-audio.volume = 1.0;
-const button = document.getElementById("clicked");
-
-function playSoundAndRedirect() {
-    audio.play();
-    setTimeout(function(){
-        window.location.href = "https://charansaiparvathala.github.io/TypingGame/mode.html";
-    }, 10);
-}
-
-button.addEventListener("click", playSoundAndRedirect);
-
+         audio.src = "https://res.cloudinary.com/dkh9qnxkd/video/upload/v1708856768/mouse-click-153941_dlwpdq.mp3";
+        audio.valume=1.0; document.getElementById("clicked").addEventListener("click", function() {
+            setTimeout(function(){
+                window.location.href = "https://charansaiparvathala.github.io/TypingGame/mode.html";
             });
          });
      </script>
