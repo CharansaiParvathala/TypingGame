@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
- 
+
     const inputField = document.querySelector('.input-field');
 
     const paragraphs = [localStorage.getItem('typedText') || "","There is something wrong Try again"];
@@ -32,7 +32,7 @@ function loadParagraph() {
 function initTyping() {
     let characters = typingText.querySelectorAll("span");
     let typedChar = inpField.value.split("")[charIndex];
-    if (charIndex < characters.length-1 && timeLeft > 0) {
+    if (charIndex < characters.length - 1 && timeLeft > 0) {
         if (!isTyping) {
             timer = setInterval(initTimer, 1000);
             isTyping = true;
@@ -65,7 +65,11 @@ function initTyping() {
         cpmTag.innerText = charIndex - mistakes;
     } else {
         clearInterval(timer);
-        inpField.value = "";
+        if (timeLeft <= 0) {
+            alert("Time's up! Your WPM is: " +wpmTag.innerText+"\n Checkout other information in page👇");
+        } else {
+            alert("You completed the text! Your WPM is : " + wpmTag.innerText+"\n Checkout other information in page👇");
+        }
     }
 }
 
