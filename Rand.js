@@ -77,9 +77,9 @@ function initTyping() {
         // Display result here
         // For example:
         if (timeLeft <= 0) {
-            alert("Time's up! Your result is: WPM: " + wpmTag.innerText + ", Mistakes: " + mistakeTag.innerText + ", CPM: " + cpmTag.innerText);
+            alert("Time's up! Your WPM is: "+ wpmTag.innerText+"\n\nCheckout other information in the page 👇");
         } else {
-            alert("You completed the text! Your result is: WPM: " + wpmTag.innerText + ", Mistakes: " + mistakeTag.innerText + ", CPM: " + cpmTag.innerText);
+            alert("You completed the text! Your WPM is : " + wpmTag.innerText+"\n\nCheckout other information in the page 👇");
         }
     }
 }
