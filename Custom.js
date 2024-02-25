@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         document.getElementById('message').setAttribute('required', '');
-
+        audio.src = "https://res.cloudinary.com/dkh9qnxkd/video/upload/v1708856768/mouse-click-153941_dlwpdq.mp3";
+audio.play();
         localStorage.setItem('typedText', typedText); 
         window.location.href = 'https://charansaiparvathala.github.io/TypingGame/TypingGame.html';
     });
@@ -39,6 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         document.getElementById('message').setAttribute('required', '');
+        audio.src = "https://res.cloudinary.com/dkh9qnxkd/video/upload/v1708856768/mouse-click-153941_dlwpdq.mp3";
+audio.play();
 
         localStorage.setItem('typedText', typedText); 
         window.location.href = 'https://charansaiparvathala.github.io/TypingGame/Invisible.html';
