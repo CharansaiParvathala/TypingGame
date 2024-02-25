@@ -90,8 +90,6 @@ function initTimer() {
 }
 
 function resetGame() {
-audio.src = "https://res.cloudinary.com/dkh9qnxkd/video/upload/v1708856768/mouse-click-153941_dlwpdq.mp3";
-audio.play();
     loadParagraph();
     clearInterval(timer);
     timeLeft = maxTime;
