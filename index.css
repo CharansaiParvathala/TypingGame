@@ -15,7 +15,7 @@ body{
         border: 3px solid black;
         border-radius: 20px;
     }
-@media (max-width: 750px) {
+@media (max-width: 767px) {
     .lap{
         display: none;
         }
@@ -25,7 +25,7 @@ body{
         }
 }
 
-@media (min-width: 751px) {
+@media (min-width: 768px) {
     .mob{
         display: none;
         }
