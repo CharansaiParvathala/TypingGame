@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('message').setAttribute('required', '');
         
         localStorage.setItem('typedText', typedText); 
-        window.location.href = 'https://charansaiparvathala.github.io/TypingGame/TypingGame.html';
+        window.location.href = 'TypingGame.html';
     });
 });
 
@@ -41,6 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('message').setAttribute('required', '');
 
         localStorage.setItem('typedText', typedText); 
-        window.location.href = 'https://charansaiparvathala.github.io/TypingGame/Invisible.html';
+        window.location.href = 'Invisible.html';
     });
 });
