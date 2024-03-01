@@ -39,9 +39,18 @@ body{
         height: 200px;
         }
 }
-.click:hover{
-        transform: scale(0.89);
-    }
+
+.click {
+  transition: transform 0.2s ease;
+}
+
+.click:hover {
+  transform: scale(1.1);
+}
+
+.click:active {
+  transform: scale(0.9);
+}
 
 marquee{
     color: #ff80f1;
