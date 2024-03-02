@@ -1,6 +1,4 @@
-const audio = new Audio();
-         audio.src = "audio/key_click.mp3";
-         audio.volume = 0.2;
+
 const paragraphs = [
     "The_quick_brown_fox_jumps_over_the_lazy_dog.Pack_my_box_with_five_dozen_liquor_jugs.How_razorback-jumping_frogs_can_level_six_piqued_gymnasts!",
     "Sphinx_of_black_quartz,_judge_my_vow.The_five_boxing_wizards_jump_quickly.Jackdaws_love_my_big_sphinx_of_quartz.The_jay,_pig,_fox,_zebra,_and_my_wolves_quack!",
@@ -43,6 +41,9 @@ function loadParagraph() {
 
 function initTyping() {
 
+         const audio = new Audio();
+         audio.src = "audio/key_click.mp3";
+         audio.volume = 0.2;
          audio.play();
 
     let characters = typingText.querySelectorAll("span");
