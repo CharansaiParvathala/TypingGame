@@ -1,15 +1,15 @@
 
 const paragraphs = [
-    "The_quick_brown_fox_jumps_over_the_lazy_dog.Pack_my_box_with_five_dozen_liquor_jugs.How_razorback-jumping_frogs_can_level_six_piqued_gymnasts!",
-    "Sphinx_of_black_quartz,_judge_my_vow.The_five_boxing_wizards_jump_quickly.Jackdaws_love_my_big_sphinx_of_quartz.The_jay,_pig,_fox,_zebra,_and_my_wolves_quack!",
-    "Amazingly_few_discotheques_provide_jukeboxes.My_girl_wove_six_dozen_plaid_jackets_before_she_quit.We_promptly_judged_antique_ivory_buckles_for_the_next_prize.",
-    "A_quick_movement_of_the_enemy_will_jeopardize_six_gunboats.All_questions_asked_by_five_watched_experts_amaze_the_judge.Jack_quietly_moved_up_front_and_seized_the_big_ball_of_wax.",
-    "A_mad_boxer_shot_a_quick,_gloved_jab_to_the_jaw_of_his_dizzy_opponent.The_hungry_purple_hippo_quickly_ate_the_juicy_watermelon.Crazy_Frederick_bought_many_very_exquisite_opal_jewels.",
-    "Sixty_zippers_were_quickly_picked_from_the_woven_jute_bag.Jinxed_wizards_pluck_ivy_from_the_big_quilt.Big_July_earthquakes_confound_zany_experimental_vow.",
-    "Few_quips_galvanized_the_mock_jury_box.The_quick_brown_fox_jumps_over_the_lazy_dog.Pack_my_box_with_five_dozen_liquor_jugs.How_razorback-jumping_frogs_can_level_six_piqued_gymnasts!",
-    "Sphinx_of_black_quartz,_judge_my_vow.The_five_boxing_wizards_jump_quickly.Jackdaws_love_my_big_sphinx_of_quartz.The_jay,_pig,_fox,_zebra,_and_my_wolves_quack!",
-    "Amazingly_few_discotheques_provide_jukeboxes.My_girl_wove_six_dozen_plaid_jackets_before_she_quit.We_promptly_judged_antique_ivory_buckles_for_the_next_prize.",
-    "A_quick_movement_of_the_enemy_will_jeopardize_six_gunboats.All_questions_asked_by_five_watched_experts_amaze_the_judge.Jack_quietly_moved_up_front_and_seized_the_big_ball_of_wax."
+    "The quick brown fox jumps over the lazy dog. Pack my box with five dozen liquor jugs. How razorback-jumping frogs can level six piqued gymnasts!",
+    "Sphinx of black quartz, judge my vow. The five boxing wizards jump quickly. Jackdaws love my big sphinx of quartz. The jay, pig, fox, zebra, and my wolves quack!",
+    "Amazingly few discotheques provide jukeboxes. My girl wove six dozen plaid jackets before she quit. We promptly judged antique ivory buckles for the next prize.",
+    "A quick movement of the enemy will jeopardize six gunboats. All questions asked by five watched experts amaze the judge. Jack quietly moved up front and seized the big ball of wax.",
+    "A mad boxer shot a quick, gloved jab to the jaw of his dizzy opponent. The hungry purple hippo quickly ate the juicy watermelon. Crazy Frederick bought many very exquisite opal jewels.",
+    "Sixty zippers were quickly picked from the woven jute bag. Jinxed wizards pluck ivy from the big quilt. Big July earthquakes confound zany experimental vow.",
+    "Few quips galvanized the mock jury box. The quick brown fox jumps over the lazy dog. Pack my box with five dozen liquor jugs. How razorback-jumping frogs can level six piqued gymnasts!",
+    "Sphinx of black quartz, judge my vow. The five boxing wizards jump quickly. Jackdaws love my big sphinx of quartz. The jay, pig, fox, zebra, and my wolves quack!",
+    "Amazingly few discotheques provide jukeboxes. My girl wove six dozen plaid jackets before she quit. We promptly judged antique ivory buckles for the next prize.",
+    "A quick movement of the enemy will jeopardize six gunboats. All questions asked by five watched experts amaze the judge. Jack quietly moved up front and seized the big ball of wax."
 ];
 
 
