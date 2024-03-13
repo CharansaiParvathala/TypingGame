@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speed Typing Game</title>
-      <link rel="stylesheet" href="Invisible.css">
-    <script src="TypingGame.js" defer></script>
-    <script src="https://kit.fontawesome.com/eeaf551f9a.js" crossorigin="anonymous"></script>
+     <script src="TypingGame.js"></script>
+    <link rel="stylesheet" href="Invisible.css">
+     <script src="https://kit.fontawesome.com/eeaf551f9a.js" crossorigin="anonymous"></script>
+     
 </head>
 <body>
     <div class="top"> 
+</body>
         <nav>
     <ul class="sidebar1">
       <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
@@ -28,7 +30,7 @@
     
     <ul>
       <li><a href="mode.html"><i class="fa-solid fa-house"> Home</i></a></li>
-      <li id="change" onclick="toggleIcon(this)" class="hideOnMobile"><i class="fa-solid fa-volume-high"></i> Sound Effect</li>
+      <li onclick="toggleIcon(this);" class="hideOnMobile"><i class="fa-solid fa-volume-high"></i> Sound Effect</li>
       <li class="hideOnMobile"> <a href="https://github.com/CharansaiParvathala"><i class="fa-brands fa-github"></i> GitHub</a></li>
       <li class="hideOnMobile"><a href="mailto:charansaiparvathala@gmail.com"><i class="fa-solid fa-envelope"></i> Mail</a></li>
       <li class="hideOnMobile"><a href="https://www.linkedin.com/in/charansai-parvathala"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
@@ -39,8 +41,7 @@
   </div>
   
   
-  
-  
+ 
   <br><br>
     <div class="bu">
     <div class="wrapper">
@@ -52,27 +53,19 @@
             <div class="content">
                 <ul class="result-details">
                     <li class="time">
-                        <p>
-                            Time Left:
-                        </p>
+                        <p>Time Left:</p>
                         <span><b>60</b>s</span>
                     </li>
                     <li class="mistake">
-                        <p>
-                            Mistakes:
-                        </p>
+                        <p>Mistakes:</p>
                         <span>0</span>
                     </li>
                     <li class="wpm">
-                        <p>
-                            WPM:
-                        </p>
+                        <p>WPM:</p>
                         <span>0</span>
                     </li>
                     <li class="cpm">
-                        <p>
-                            CPM:
-                        </p>
+                        <p>CPM:</p>
                         <span>0</span>
                     </li>
                 </ul>
@@ -80,8 +73,8 @@
             </div>
         </div>
     </div>
- </div>
-
+    </div>
+    
   <script>
       function showSidebar(){
       const sidebar1 = document.querySelector('.sidebar1')
@@ -117,7 +110,19 @@
       }
       changeValue();
     }
-  </script>
+    
+    let value = 0.8;
 
+function changeValue() {
+  if (value === 0.8) {
+    value = 0.3;
+  } else if (value === 0.3) {
+    value = 0;
+  } else {
+    value = 0.8;
+  }
+}
+
+  </script>
 </body>
 </html>
