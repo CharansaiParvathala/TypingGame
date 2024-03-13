@@ -35,7 +35,7 @@ function loadParagraph() {
 function initTyping() {
 const audio = new Audio();
    audio.volume = value;
-         audio.src = "key_click.mp3";
+         audio.src = "audio/key_click.mp3";
          audio.play();
 
     let characters = typingText.querySelectorAll("span");
