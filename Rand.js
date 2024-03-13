@@ -133,24 +133,24 @@ var currentAudio = 1;
 function changeAudio() {
   var audioPlayer = document.getElementById('audio');
   if (currentAudio === 1) {
-    audioPlayer.src = '';
+    audioPlayer.src = 'audio/Aurora - Runaway (lyrics) - Chilled Sad.m4a';
     currentAudio = 2;
   } else if(currentAudio === 2) {
-    audioPlayer.src = '';
+    audioPlayer.src = 'audio/Maha Adhbhutham Full Video Song Oh Baby Songs Samantha , Naga Shaurya Mickey J Meyer - Aditya Music India.m4a';
     currentAudio = 3;
   }
 else if(currentAudio === 3) {
-    audioPlayer.src = '';
+    audioPlayer.src = 'audio/Indila - Love Story - Indila.m4a';
     currentAudio = 4;
   }
 
 else if(currentAudio === 4) {
-    audioPlayer.src = '';
+    audioPlayer.src = 'audio/Asha Pasham - Anurag Kulkarni.m4a';
     currentAudio = 5;
   }
  
 else if(currentAudio === 5) {
-    audioPlayer.src = '';
+    audioPlayer.src = 'audio/Suzume (feat Toaka) - RADWIMPS.m4a';
     currentAudio = 6;
   }  else{
       audioPlayer.src = 'audio/song.mp3';
