@@ -1,4 +1,3 @@
-
 const paragraphs = [
     "The quick brown fox jumps over the lazy dog. Pack my box with five dozen liquor jugs. How razorback-jumping frogs can level six piqued gymnasts!",
     "Sphinx of black quartz, judge my vow. The five boxing wizards jump quickly. Jackdaws love my big sphinx of quartz. The jay, pig, fox, zebra, and my wolves quack!",
@@ -39,11 +38,23 @@ function loadParagraph() {
     typingText.addEventListener("click", () => inpField.focus());
 }
 
-function initTyping() {
+let value = 0.8;
 
-         const audio = new Audio();
-         audio.src = "audio/key_click.mp3";
-         audio.volume = 0.2;
+function changeValue() {
+  if (value === 0.8) {
+    value = 0.3;
+  } else if (value === 0.3) {
+    value = 0;
+  } else {
+    value = 0.8;
+  }
+}
+
+function initTyping() {
+   const audio = new Audio();
+   audio.volume = value;
+         audio.src = "https://res.cloudinary.com/dkh9qnxkd/video/upload/v1708854299/click-button-140881_f2eduy.mp3";
+         /***************/
          audio.play();
 
     let characters = typingText.querySelectorAll("span");
@@ -118,3 +129,30 @@ function resetGame() {
 loadParagraph();
 inpField.addEventListener("input", initTyping);
 tryAgainBtn.addEventListener("click", resetGame);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const audio = document.getElementById('audio');
+  const playIcon = document.getElementById('playIcon');
+  const volumeSlider = document.getElementById('volumeSlider');
+  const forwardIcon = document.getElementById('forwardIcon');
+  
+  playIcon.addEventListener('click', function() {
+    if (audio.paused) {
+      value = 0;
+      audio.play();
+      playIcon.classList.remove('fa-play');
+      playIcon.classList.add('fa-stop');
+    } else {
+      value = 0.8;
+      audio.pause();
+      playIcon.classList.remove('fa-stop');
+      playIcon.classList.add('fa-play');
+    }
+  });
+  
+  volumeSlider.addEventListener('input', function() {
+    audio.volume = this.value;
+  });
+  
+});
