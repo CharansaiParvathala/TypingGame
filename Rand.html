@@ -5,10 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speed Typing Game</title>
-    <link rel="stylesheet" href="TypingGame.css">
-    <script src="Rand.js" defer></script>
+    <link rel="stylesheet" href="typo.css">
+    <script src="rand.js" defer></script>
+    <script src="https://kit.fontawesome.com/eeaf551f9a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="top"> 
+</body>
+        <nav>
+    <ul class="sidebar1">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li onclick="toggleIcon(this)"><i class="fa-solid fa-volume-high"></i> Sound Effect</li>
+      <li><a href="https://github.com/CharansaiParvathala"><i class="fa-brands fa-github"></i> GitHub</a></li>
+      <li><a href="mailto:charansaiparvathala@gmail.com"><i class="fa-solid fa-envelope"></i> Mail</a></li>
+      <li><a href="https://www.linkedin.com/in/charansai-parvathala"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+    </ul>
+    <ul class="sidebar2">
+        <audio id="audio" src="content://com.android.providers.downloads.documents/document/msf%3A1000025033"></audio>
+         <li onclick=hideControls()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+       
+       <li><i id="playIcon" class="fa-solid fa-play"></i>   <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1"></li>
+    </ul>
+    
+    <ul>
+      <li><a href="mode.html"><i class="fa-solid fa-house"> Home</i></a></li>
+      <li onclick="toggleIcon(this)" class="hideOnMobile"><i class="fa-solid fa-volume-high"></i> Sound Effect</li>
+      <li class="hideOnMobile"> <a href="https://github.com/CharansaiParvathala"><i class="fa-brands fa-github"></i> GitHub</a></li>
+      <li class="hideOnMobile"><a href="mailto:charansaiparvathala@gmail.com"><i class="fa-solid fa-envelope"></i> Mail</a></li>
+      <li class="hideOnMobile"><a href="https://www.linkedin.com/in/charansai-parvathala"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+      <li class="controls" onclick=showControls()><i class="fa-solid fa-music"></i></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+   </nav>
+  </div>
+  
+  
+  
+  
+  <br><br>
+    <div class="bu">
     <div class="wrapper">
         <input type="text" class="input-field">
         <div class="content-box">
@@ -46,5 +81,44 @@
             </div>
         </div>
     </div>
+ </div>
+
+  <script>
+      function showSidebar(){
+      const sidebar1 = document.querySelector('.sidebar1')
+      sidebar1.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar1 = document.querySelector('.sidebar1')
+      sidebar1.style.display = 'none'
+    }
+     function showControls(){
+      const sidebar2 = document.querySelector('.sidebar2')
+      sidebar2.style.display = 'flex'
+    }
+    function hideControls(){
+      const sidebar2 = document.querySelector('.sidebar2')
+      sidebar2.style.display = 'none'
+    }
+    
+    function toggleIcon(element) {
+      var icon = element.querySelector('i');
+      if (icon.classList.contains('fa-volume-high')) {
+        icon.classList.remove('fa-volume-high');
+        icon.classList.add('fa-volume-low');
+      }
+      else if(icon.classList.contains('fa-volume-low')) {
+        icon.classList.remove('fa-volume-low');
+        icon.classList.add('fa-volume-xmark');
+      }
+      else
+       {
+        icon.classList.remove('fa-volume-xmark');
+        icon.classList.add('fa-volume-high');
+      }
+      changeValue();
+    }
+  </script>
+
 </body>
 </html>
