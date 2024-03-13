@@ -53,8 +53,7 @@ function changeValue() {
 function initTyping() {
    const audio = new Audio();
    audio.volume = value;
-         audio.src = "https://res.cloudinary.com/dkh9qnxkd/video/upload/v1708854299/click-button-140881_f2eduy.mp3";
-         /***************/
+         audio.src = "audio/key_click.mp3";
          audio.play();
 
     let characters = typingText.querySelectorAll("span");
