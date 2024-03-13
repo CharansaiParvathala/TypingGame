@@ -210,7 +210,7 @@ li:not(:first-child) span {
 /*Navigation Bar */
 
 nav{
-  background-color: white;
+  background: linear-gradient(90deg,rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
@@ -221,8 +221,9 @@ nav ul{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  
-  background-color: #973efade;
+  background: linear-gradient(0deg, rgba(255,255,255,0.6660814262298216) 34%, rgba(255,255,255,0.6330938729895166) 81%);
+  border: solid 2px black;
+  border-radius: 5px;
   padding: 0;
   margin: 0;
   overflow: hidden;
