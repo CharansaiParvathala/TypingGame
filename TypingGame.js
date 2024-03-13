@@ -29,10 +29,14 @@ function loadParagraph() {
     typingText.addEventListener("click", () => inpField.focus());
 }
 
+
+
+
 function initTyping() {
 const audio = new Audio();
-         audio.src = "audio/key_click.mp3";
-         audio.volume = 0.2;
+   audio.volume = value;
+         audio.src = "https://res.cloudinary.com/dkh9qnxkd/video/upload/v1708854299/click-button-140881_f2eduy.mp3";
+         /***************/
          audio.play();
 
     let characters = typingText.querySelectorAll("span");
@@ -76,7 +80,10 @@ const audio = new Audio();
             alert("You completed the text! Your WPM is : " + wpmTag.innerText+"\n Checkout other information in page👇");
         }
     }
+/*}*/
 }
+
+
 
 function initTimer() {
     if (timeLeft > 0) {
@@ -104,4 +111,38 @@ function resetGame() {
     loadParagraph();
     inpField.addEventListener("input", initTyping);
     tryAgainBtn.addEventListener("click", resetGame);
+});
+document.addEventListener('DOMContentLoaded', function() {
+  const audio = document.getElementById('audio');
+  const playIcon = document.getElementById('playIcon');
+  const volumeSlider = document.getElementById('volumeSlider');
+  const forwardIcon = document.getElementById('forwardIcon');
+  
+  playIcon.addEventListener('click', function() {
+    if (audio.paused) {
+      value = 0;
+      audio.play();
+      playIcon.classList.remove('fa-play');
+      playIcon.classList.add('fa-stop');
+    } else {
+      value = 0.8;
+      audio.pause();
+      playIcon.classList.remove('fa-stop');
+      playIcon.classList.add('fa-play');
+    }
+  });
+  let value=0.8;
+  function changeValue() {
+  if (value === 0.8) {
+    value = 0.3;
+  } else if (value === 0.3) {
+    value = 0;
+  } else {
+    value = 0.8;
+  }
+}
+  volumeSlider.addEventListener('input', function() {
+    audio.volume = this.value;
+  });
+  
 });
