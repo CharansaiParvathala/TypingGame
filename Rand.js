@@ -129,6 +129,35 @@ loadParagraph();
 inpField.addEventListener("input", initTyping);
 tryAgainBtn.addEventListener("click", resetGame);
 
+var currentAudio = 1;
+function changeAudio() {
+  var audioPlayer = document.getElementById('audio');
+  if (currentAudio === 1) {
+    audioPlayer.src = '';
+    currentAudio = 2;
+  } else if(currentAudio === 2) {
+    audioPlayer.src = '';
+    currentAudio = 3;
+  }
+else if(currentAudio === 3) {
+    audioPlayer.src = '';
+    currentAudio = 4;
+  }
+
+else if(currentAudio === 4) {
+    audioPlayer.src = '';
+    currentAudio = 5;
+  }
+ 
+else if(currentAudio === 5) {
+    audioPlayer.src = '';
+    currentAudio = 6;
+  }  else{
+      audioPlayer.src = 'audio/song.mp3';
+    currentAudio = 1;
+  }
+  audioPlayer.play();
+}
 
 document.addEventListener('DOMContentLoaded', function() {
   const audio = document.getElementById('audio');
