@@ -2,31 +2,61 @@
 <html lang="en"> 
 <head> 
     <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, user-scalable=no"> 
-    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="mode.css">
     <title>TypoGame</title> 
 </head> 
 <body>
+   
     <marquee loop="-1">ATTENTION PLEASE. IT IS A DEVELOPING SITE. PLEASE WAIT FOR THE PERFECT SITE. IN THE FUTURE, TWO OTHER MODES WILL BE ADDED.</marquee>
     <div class="box">
     <div class="bu">
-        <img src="images/mobile_logo.png" width="450" height="400" class="mob"></img>
-    <img src="images/desktop_logo.png" class="lap"></img>
+        <img src="https://res.cloudinary.com/dkh9qnxkd/image/upload/v1708854242/IMG_20240225_151210-removebg-preview_cbcouu.png" width="450" height="400" class="mob"></img>
+    <img src="https://res.cloudinary.com/dkh9qnxkd/image/upload/v1708854232/IMG_20240225_151239-removebg-preview_jq9uus.png" class="lap"></img>
     </div>
 
-    <img src="images/enter_key.png" class="click" onclick="audio.play();" id="clicked">
- </div>
-     <script type="text/javascript">
-         const audio = new Audio();
-audio.src = "audio/mouse_click.mp3";
-audio.volume = 1.0;
+    <p id="modeMessage" style="color: red; font-weight: bold; display: none;">First select the play mode!</p><br>
+    
+    <div class="radio-wrapper">
+        <input type="radio" id="normal" name="radios" value="Normal">
+        <label for="normal">Normal</label>
+  
+        <input type="radio" id="rapid" name="radios" value="Rapid">
+        <label for="rapid">Rapid</label>
+    </div>
 
-document.getElementById("clicked").addEventListener("click", function() {
-    audio.play();
-    setTimeout(function() {
-        window.location.href = "mode.html";
-    }, 310);
-});
-     </script>
+    
+    <img src="https://res.cloudinary.com/dkh9qnxkd/image/upload/v1708854285/images__6_-removebg-preview_pbgnl4.png" class="click" id="clicked">
+    </div>
+ 
+    <script type="text/javascript">
+        let option = "";
+        document.querySelectorAll('input[name="radios"]').forEach((radio) => {
+            radio.addEventListener('change', function() {
+                if (this.checked) {
+                    option = this.value; 
+                    console.log("Selected option value:", option);
+                    document.getElementById("modeMessage").style.display = "none"; // Hide message when option selected
+                }
+            });
+        });
+        
+        const audio = new Audio();
+        audio.src = "https://res.cloudinary.com/dkh9qnxkd/video/upload/v1708861067/mouseclick3sec_e0cwpk.mp3";
+        audio.volume = 1.0;
+
+        document.getElementById("clicked").addEventListener("click", function() {
+            if(option === "") {
+                document.getElementById("modeMessage").style.display = "block"; // Show message if no option selected
+                return; // Prevent further execution
+            }
+            audio.play();
+            if(option === "Normal"){
+                window.location.href = "https://typogame.netlify.app/mode.html";
+            } else if(option === "Rapid"){
+                window.location.href = "https://typogame.netlify.app/rapid";
+            }
+        });
+    </script>
 </body>
 </html>
