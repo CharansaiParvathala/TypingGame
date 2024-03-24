@@ -297,8 +297,8 @@ nav ul li{
   margin-top: 15px;
 }
 
-.sidebar1 li,li i {
-  margin-right: -10px; 
+.sidebar1 li,li{
+  margin-right: 15px; 
   font-size: 20px;
 }
 
