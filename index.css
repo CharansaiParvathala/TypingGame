@@ -25,7 +25,7 @@ body{
         }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 766px) {
     .mob{
         display: none;
         }
