@@ -63,17 +63,6 @@ const levels = {
     setInterval(checkStatus, 50);
 
   }
-//creating the countdown function
-function countdown() {
-  if (time > 0) {
-    time--; // decrease time by one
-  } else if (time === 0) {
-    isPlaying = false;
-    checkStatus(); // Check game status when time is up
-  }
-  progressbar(time);
-}
-
 
   function startMatch() {
   if (matchWords()) {
@@ -110,15 +99,18 @@ function countdown() {
     //get random word by index
     currentWord.innerHTML = words[randomIndex];
   }
+
   //creating the countdown function
-  function countdown() {
-    if (time > 0) {
-      time--; //descrease time by one
-    } else if (time === 0) {
-      isplaying = false;
-    }
-    progressbar(time)
+function countdown() {
+  if (time > 0) {
+    time--; // decrease time by one
+  } else if (time === 0) {
+    isPlaying = false;
+    checkStatus(); // Check game status when time is up
   }
+  progressbar(time);
+}
+
 
   function checkStatus() {
   if (!isPlaying && time === 0) {
