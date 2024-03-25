@@ -3,7 +3,7 @@
 <head> 
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>TypoGame</title> 
 </head> 
 <body>
@@ -47,14 +47,14 @@
 
         document.getElementById("clicked").addEventListener("click", function() {
             if(option === "") {
-                document.getElementById("modeMessage").style.display = "block"; // Show message if no option selected
-                return; // Prevent further execution
+                document.getElementById("modeMessage").style.display = "block";
+                return;
             }
             audio.play();
             if(option === "Normal"){
-                window.location.href = "https://typogame.netlify.app/mode.html";
+                window.location.href = "html/mode.html";
             } else if(option === "Rapid"){
-                window.location.href = "https://typogame.netlify.app/rapid";
+                window.location.href = "html/rapid.html";
             }
         });
     </script>
