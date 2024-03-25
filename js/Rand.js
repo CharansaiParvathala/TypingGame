@@ -53,7 +53,7 @@ function changeValue() {
 function initTyping() {
    const audio = new Audio();
    audio.volume = value;
-         audio.src = "media/sound/key_click.mp3";
+         audio.src = "../media/sound/key_click.mp3";
          audio.play();
 
     let characters = typingText.querySelectorAll("span");
@@ -136,24 +136,24 @@ function changeAudio() {
     audioPlayer.src = 'media/sound/Aurora - Runaway (lyrics) - Chilled Sad.m4a';
     currentAudio = 2;
   } else if(currentAudio === 2) {
-    audioPlayer.src = 'media/sound/Maha Adhbhutham.mp3';
+    audioPlayer.src = '../media/sound/Maha Adhbhutham.mp3';
     currentAudio = 3;
   }
 else if(currentAudio === 3) {
-    audioPlayer.src = 'media/sound/Indila - Love Story - Indila.m4a';
+    audioPlayer.src = '../media/sound/Indila - Love Story - Indila.m4a';
     currentAudio = 4;
   }
 
 else if(currentAudio === 4) {
-    audioPlayer.src = 'media/sound/Asha Pasham - Anurag Kulkarni.m4a';
+    audioPlayer.src = '../media/sound/Asha Pasham - Anurag Kulkarni.m4a';
     currentAudio = 5;
   }
  
 else if(currentAudio === 5) {
-    audioPlayer.src = 'media/sound/Suzume (feat Toaka) - RADWIMPS.m4a';
+    audioPlayer.src = '../media/sound/Suzume (feat Toaka) - RADWIMPS.m4a';
     currentAudio = 6;
   }  else{
-      audioPlayer.src = 'media/sound/song.mp3';
+      audioPlayer.src = '../media/sound/song.mp3';
     currentAudio = 1;
   }
   audioPlayer.play();
