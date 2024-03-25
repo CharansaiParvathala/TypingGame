@@ -2,6 +2,7 @@
 //globals
 const CORRECTSOUND = new Audio("../sound/sound_correct.mp3")
 const INCORRECTSOUND = new Audio("../sound/sound_incorrect.mp3")
+INCORRECTSOUND.volume=0.1;
 const levels = {
     easy: 15,
     medium: 10,
@@ -117,7 +118,6 @@ function countdown() {
     isPlaying = true; // Set isPlaying to true to prevent multiple plays of incorrect sound
     message.innerHTML = "Game Over!";
     message.style.color = "#f00";
-    INCORRECTSOUND.volume=0.2;
     INCORRECTSOUND.play();
     score = -1;
   }
