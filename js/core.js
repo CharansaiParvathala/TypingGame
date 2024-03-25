@@ -63,21 +63,33 @@ const levels = {
     setInterval(checkStatus, 50);
 
   }
+//creating the countdown function
+function countdown() {
+  if (time > 0) {
+    time--; // decrease time by one
+  } else if (time === 0) {
+    isPlaying = false;
+    checkStatus(); // Check game status when time is up
+  }
+  progressbar(time);
+}
+
 
   function startMatch() {
-    if (matchWords()) {
-      isplaying = true;
-      time = currentLevel + 1;
-      showWords(words);
-      wordInput.value = "";
-      score++;
-    }
-    if (score === -1) {
-      scoreDispaly.innerHTML = 0;
-    } else {
-      scoreDispaly.innerHTML = score;
-    }
+  if (matchWords()) {
+    isPlaying = true; // Reset isPlaying to true when a correct word is entered
+    time = currentLevel + 1;
+    showWords(words);
+    wordInput.value = "";
+    score++;
   }
+  if (score === -1) {
+    scoreDispaly.innerHTML = 0;
+  } else {
+    scoreDispaly.innerHTML = score;
+  }
+}
+
 
   // match current word with word input
   function matchWords() {
