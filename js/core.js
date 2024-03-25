@@ -1,7 +1,7 @@
   // window.addEventListener("load", init);
 //globals
 const CORRECTSOUND = new Audio("../media/sound/sound_incorrect.mp3")
-const INCORRECTSOUND = new Audio("./media/sound/sound_incorrect.mp3")
+const INCORRECTSOUND = new Audio("../media/sound/sound_incorrect.mp3")
 INCORRECTSOUND.volume=0.1;
 const levels = {
     easy: 15,
