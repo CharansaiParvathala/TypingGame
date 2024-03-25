@@ -117,6 +117,7 @@ function countdown() {
     isPlaying = true; // Set isPlaying to true to prevent multiple plays of incorrect sound
     message.innerHTML = "Game Over!";
     message.style.color = "#f00";
+    INCORRECTSOUND.volume=0.2;
     INCORRECTSOUND.play();
     score = -1;
   }
