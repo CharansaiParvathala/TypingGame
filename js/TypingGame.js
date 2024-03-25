@@ -35,7 +35,7 @@ function loadParagraph() {
 function initTyping() {
 const audio = new Audio();
    audio.volume = value;
-         audio.src = "audio/key_click.mp3";
+         audio.src = "../media/sound/key_click.mp3";
          audio.play();
 
     let characters = typingText.querySelectorAll("span");
@@ -118,27 +118,27 @@ var currentAudio = 1;
 function changeAudio() {
   var audioPlayer = document.getElementById('audio');
   if (currentAudio === 1) {
-    audioPlayer.src = 'audio/Aurora - Runaway (lyrics) - Chilled Sad.m4a';
+    audioPlayer.src = '../media/audio/Aurora - Runaway (lyrics) - Chilled Sad.m4a';
     currentAudio = 2;
   } else if(currentAudio === 2) {
-    audioPlayer.src = 'audio/Maha Adhbhutham Full Video Song Oh Baby Songs Samantha , Naga Shaurya Mickey J Meyer - Aditya Music India.m4a';
+    audioPlayer.src = '../media/audio/Maha Adhbhutham.mp3';
     currentAudio = 3;
   }
 else if(currentAudio === 3) {
-    audioPlayer.src = 'audio/Indila - Love Story - Indila.m4a';
+    audioPlayer.src = '../media/audio/Indila - Love Story - Indila.m4a';
     currentAudio = 4;
   }
 
 else if(currentAudio === 4) {
-    audioPlayer.src = 'audio/Asha Pasham - Anurag Kulkarni.m4a';
+    audioPlayer.src = '../media/audio/Asha Pasham - Anurag Kulkarni.m4a';
     currentAudio = 5;
   }
 
 else if(currentAudio === 5) {
-    audioPlayer.src = 'audio/Suzume (feat Toaka) - RADWIMPS.m4a';
+    audioPlayer.src = '../media/audio/Suzume (feat Toaka) - RADWIMPS.m4a';
     currentAudio = 6;
   }  else{
-      audioPlayer.src = 'audio/song.mp3';
+      audioPlayer.src = '../media/audio/song.mp3';
     currentAudio = 1;
   }
   audioPlayer.play();
